@@ -326,45 +326,31 @@ If the AI service is unavailable, the backend automatically falls back to rule-b
 ---
 
 # 📸 Screenshots
+<h2>📸 Screenshots</h2>
 
-## 📸 Screenshots
+<p align="center">
+  <img src="sb/screenshots/dashboard.png" width="45%">
+  <img src="sb/screenshots/AI%20Matches.png" width="45%">
+</p>
 
-### Dashboard
+<p align="center">
+  <img src="sb/screenshots/Skills.png" width="45%">
+  <img src="sb/screenshots/Chat%20Interface.png" width="45%">
+</p>
 
-![Dashboard](sb/screenshots/dashboard.png)
+<p align="center">
+  <img src="sb/screenshots/Send%20Barter%20Request.png" width="45%">
+  <img src="sb/screenshots/Barter%20Request.png" width="45%">
+</p>
 
-### AI Matches
+<p align="center">
+  <img src="sb/screenshots/Schedule%20Session.png" width="45%">
+  <img src="sb/screenshots/My%20Profile.png" width="45%">
+</p>
 
-![AI Matches](sb/screenshots/AI%20Matches.png)
-
-### Skills
-
-![Skills](sb/screenshots/Skills.png)
-
-### Send Barter Request
-
-![Send Barter Request](sb/screenshots/Send%20Barter%20Request.png)
-
-### Barter Request
-
-![Barter Request](sb/screenshots/Barter%20Request.png)
-
-### Chat Interface
-
-![Chat Interface](sb/screenshots/Chat%20Interface.png)
-
-### Schedule Session
-
-![Schedule Session](sb/screenshots/Schedule%20Session.png)
-
-### My Profile
-
-![My Profile](sb/screenshots/My%20Profile.png)
-
-### Badges & Leaderboard
-
-![Badges](sb/screenshots/Badges%20and%20Leaderboard.png)
----
+<p align="center">
+  <img src="sb/screenshots/Badges%20and%20Leaderboard.png" width="60%">
+</p>
 
 # 🛣️ Future Enhancements
 
