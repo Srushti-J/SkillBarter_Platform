@@ -217,30 +217,37 @@ SkillBarter-Platform/
 | `online_users`           | Server → All             | Online users list              |
 
 ---
-#  Installation
-##Clone Repository
+## Installation
+
+### 1. Clone the Repository
+
 ```bash
 git clone https://github.com/Srushti-J/SkillBarter_Platform.git
 
 cd SkillBarter_Platform
 ```
-### Backend
+
+### 2. Backend Setup
 
 ```bash
 cd sb/backend
+
 npm install
+
 npm run dev
 ```
 
-### Frontend
+### 3. Frontend Setup
 
 ```bash
 cd sb/frontend
+
 npm install
+
 npm start
 ```
 
-### AI Module
+### 4. AI Module Setup (Optional)
 
 ```bash
 cd sb/ai_module
@@ -248,22 +255,26 @@ cd sb/ai_module
 python -m venv venv
 ```
 
-Windows
+#### Windows
 
 ```bash
 venv\Scripts\activate
 ```
 
-Linux / macOS
+#### Linux / macOS
 
 ```bash
 source venv/bin/activate
 ```
+
 Install dependencies
+
 ```bash
 pip install -r requirements.txt
 ```
-Start FastAPI
+
+Run the FastAPI server
+
 ```bash
 uvicorn main:app --reload --port 8000
 ```
