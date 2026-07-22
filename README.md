@@ -327,15 +327,57 @@ If the AI service is unavailable, the backend automatically falls back to rule-b
 
 ## 📸 Screenshots
 
-### Dashboard
+### 🏠 Dashboard
+
 ![Dashboard](sb/screenshots/dashboard.png)
 
-### AI Matches
+---
+
+### 🤖 AI Matches
+
 ![AI Matches](sb/screenshots/ai-matches.png)
 
-### Chat Interface
-![Chat](sb/screenshots/chat-interface.png)
+---
 
+### 📚 Skills
+
+![Skills](sb/screenshots/skills.png)
+
+---
+
+### 📤 Send Barter Request
+
+![Send Barter Request](sb/screenshots/send-barter-request.png)
+
+---
+
+### 🤝 Barter Request
+
+![Barter Request](sb/screenshots/barter-request.png)
+
+---
+
+### 💬 Chat Interface
+
+![Chat Interface](sb/screenshots/chat-interface.png)
+
+---
+
+### 📅 Schedule Session
+
+![Schedule Session](sb/screenshots/schedule-session.png)
+
+---
+
+### 👤 My Profile
+
+![My Profile](sb/screenshots/my-profile.png)
+
+---
+
+### 🏆 Badges & Leaderboard
+
+![Badges and Leaderboard](sb/screenshots/badges-and-leaderboard.png)
 # 🛣️ Future Enhancements
 
 * 🎥 Video calling
