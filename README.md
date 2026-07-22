@@ -327,57 +327,29 @@ If the AI service is unavailable, the backend automatically falls back to rule-b
 
 ## 📸 Screenshots
 
-### 🏠 Dashboard
+<p align="center">
+  <img src="sb/screenshots/dashboard.png" width="45%" alt="Dashboard"/>
+  <img src="sb/screenshots/ai-matches.png" width="45%" alt="AI Matches"/>
+</p>
 
-![Dashboard](sb/screenshots/dashboard.png)
+<p align="center">
+  <img src="sb/screenshots/skills.png" width="45%" alt="Skills"/>
+  <img src="sb/screenshots/send-barter-request.png" width="45%" alt="Send Barter Request"/>
+</p>
 
----
+<p align="center">
+  <img src="sb/screenshots/barter-request.png" width="45%" alt="Barter Request"/>
+  <img src="sb/screenshots/chat-interface.png" width="45%" alt="Chat Interface"/>
+</p>
 
-### 🤖 AI Matches
+<p align="center">
+  <img src="sb/screenshots/schedule-session.png" width="45%" alt="Schedule Session"/>
+  <img src="sb/screenshots/my-profile.png" width="45%" alt="My Profile"/>
+</p>
 
-![AI Matches](sb/screenshots/ai-matches.png)
-
----
-
-### 📚 Skills
-
-![Skills](sb/screenshots/skills.png)
-
----
-
-### 📤 Send Barter Request
-
-![Send Barter Request](sb/screenshots/send-barter-request.png)
-
----
-
-### 🤝 Barter Request
-
-![Barter Request](sb/screenshots/barter-request.png)
-
----
-
-### 💬 Chat Interface
-
-![Chat Interface](sb/screenshots/chat-interface.png)
-
----
-
-### 📅 Schedule Session
-
-![Schedule Session](sb/screenshots/schedule-session.png)
-
----
-
-### 👤 My Profile
-
-![My Profile](sb/screenshots/my-profile.png)
-
----
-
-### 🏆 Badges & Leaderboard
-
-![Badges and Leaderboard](sb/screenshots/badges-and-leaderboard.png)
+<p align="center">
+  <img src="sb/screenshots/badges-and-leaderboard.png" width="60%" alt="Badges and Leaderboard"/>
+</p>
 # 🛣️ Future Enhancements
 
 * 🎥 Video calling
