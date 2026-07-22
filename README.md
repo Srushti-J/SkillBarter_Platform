@@ -325,32 +325,16 @@ If the AI service is unavailable, the backend automatically falls back to rule-b
 
 ---
 
-# 📸 Screenshots
-<h2>📸 Screenshots</h2>
+## 📸 Screenshots
 
-<p align="center">
-  <img src="sb/screenshots/dashboard.png" width="45%">
-  <img src="sb/screenshots/AI%20Matches.png" width="45%">
-</p>
+### Dashboard
+![Dashboard](sb/screenshots/dashboard.png)
 
-<p align="center">
-  <img src="sb/screenshots/Skills.png" width="45%">
-  <img src="sb/screenshots/Chat%20Interface.png" width="45%">
-</p>
+### AI Matches
+![AI Matches](sb/screenshots/ai-matches.png)
 
-<p align="center">
-  <img src="sb/screenshots/Send%20Barter%20Request.png" width="45%">
-  <img src="sb/screenshots/Barter%20Request.png" width="45%">
-</p>
-
-<p align="center">
-  <img src="sb/screenshots/Schedule%20Session.png" width="45%">
-  <img src="sb/screenshots/My%20Profile.png" width="45%">
-</p>
-
-<p align="center">
-  <img src="sb/screenshots/Badges%20and%20Leaderboard.png" width="60%">
-</p>
+### Chat Interface
+![Chat](sb/screenshots/chat-interface.png)
 
 # 🛣️ Future Enhancements
 
