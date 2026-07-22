@@ -256,9 +256,12 @@ Linux / macOS
 ```bash
 source venv/bin/activate
 ```
-
+Install dependencies
 ```bash
 pip install -r requirements.txt
+```
+Start FastAPI
+```bash
 uvicorn main:app --reload --port 8000
 ```
 #  Environment Variables
