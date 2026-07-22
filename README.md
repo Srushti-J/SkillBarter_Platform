@@ -1,4 +1,4 @@
-# 🤝 SkillBarter Platform v2
+# SkillBarter Platform v2
 
 > **An AI-powered Skill Exchange Platform** where users can teach what they know and learn what they need through intelligent skill matching, real-time communication, session scheduling, and a reputation-based learning ecosystem.
 
@@ -12,7 +12,7 @@
 
 ---
 
-## 📖 Overview
+## Overview
 
 SkillBarter Platform is a full-stack web application that enables users to exchange skills without monetary transactions. Users create profiles showcasing the skills they can teach and the skills they wish to learn. An AI-powered recommendation engine intelligently matches compatible users, while real-time chat and notifications make collaboration seamless.
 
@@ -20,16 +20,16 @@ Unlike traditional learning platforms, SkillBarter focuses on **peer-to-peer kno
 
 ---
 
-# ✨ Features
+# Features
 
-### 🔐 Authentication
+###  Authentication
 
 * Secure user registration and login
 * JWT-based authentication
 * Protected routes
 * Persistent login sessions
 
-### 👤 User Profile
+###  User Profile
 
 * Create and edit profile
 * Upload profile picture
@@ -38,7 +38,7 @@ Unlike traditional learning platforms, SkillBarter focuses on **peer-to-peer kno
 * Set proficiency levels
 * Profile completeness validation
 
-### 🤖 AI Skill Matching
+###  AI Skill Matching
 
 * AI-powered user recommendations
 * Intelligent compatibility scoring
@@ -46,14 +46,14 @@ Unlike traditional learning platforms, SkillBarter focuses on **peer-to-peer kno
 * Returns only real MongoDB users
 * Automatic fallback scoring if AI service is unavailable
 
-### 🤝 Skill Requests
+###  Skill Requests
 
 * Send barter requests
 * Accept or reject requests
 * Instant request notifications
 * Request history
 
-### 💬 Real-Time Chat
+###  Real-Time Chat
 
 * One-to-one messaging
 * Socket.IO powered
@@ -62,21 +62,21 @@ Unlike traditional learning platforms, SkillBarter focuses on **peer-to-peer kno
 * Online/offline status
 * Conversation history
 
-### 📅 Session Management
+###  Session Management
 
 * Schedule learning sessions
 * Complete sessions
 * Cancel sessions
 * Track session history
 
-### ⭐ Reviews & Reputation
+###  Reviews & Reputation
 
 * Rate learning partners
 * Leave reviews
 * Reputation score calculation
 * Community trust system
 
-### 🔔 Live Notifications
+###  Live Notifications
 
 * New barter requests
 * Request accepted/rejected
@@ -86,7 +86,7 @@ Unlike traditional learning platforms, SkillBarter focuses on **peer-to-peer kno
 
 ---
 
-# 🚀 What's New in Version 2
+#  What's New in Version 2
 
 | Previous Issue                     | Fixed in v2                                |
 | ---------------------------------- | ------------------------------------------ |
@@ -101,7 +101,7 @@ Unlike traditional learning platforms, SkillBarter focuses on **peer-to-peer kno
 
 ---
 
-# 🏗️ Tech Stack
+#  Tech Stack
 
 ## Frontend
 
@@ -131,7 +131,7 @@ Unlike traditional learning platforms, SkillBarter focuses on **peer-to-peer kno
 
 ---
 
-# 📂 Project Structure
+#  Project Structure
 
 ```text
 SkillBarter-Platform/
@@ -165,7 +165,7 @@ SkillBarter-Platform/
 
 ---
 
-# 🔄 End-to-End Workflow
+#  End-to-End Workflow
 
 1. User registers and logs in.
 2. User completes profile by adding skills offered and skills wanted.
@@ -181,7 +181,7 @@ SkillBarter-Platform/
 
 ---
 
-# ⚡ Real-Time Socket.IO Events
+#  Real-Time Socket.IO Events
 
 | Event                    | Direction                | Description                    |
 | ------------------------ | ------------------------ | ------------------------------ |
@@ -196,9 +196,9 @@ SkillBarter-Platform/
 
 ---
 
-# ⚙️ Installation
+#  Installation
 
-## 1️⃣ Clone Repository
+## 1️ Clone Repository
 
 ```bash
 git clone https://github.com/yourusername/SkillBarter-Platform.git
@@ -208,7 +208,7 @@ cd SkillBarter-Platform
 
 ---
 
-## 2️⃣ Backend
+## 2️ Backend
 
 ```bash
 cd backend
@@ -226,7 +226,7 @@ http://localhost:5000
 
 ---
 
-## 3️⃣ Frontend
+## 3️ Frontend
 
 ```bash
 cd frontend
@@ -244,7 +244,7 @@ http://localhost:3000
 
 ---
 
-## 4️⃣ AI Module (Optional)
+## 4️ AI Module (Optional)
 
 ```bash
 cd ai_module
@@ -278,7 +278,7 @@ uvicorn main:app --reload --port 8000
 
 ---
 
-# 🔑 Environment Variables
+#  Environment Variables
 
 ## Backend (.env)
 
@@ -308,7 +308,7 @@ REACT_APP_SOCKET_URL=http://localhost:5000
 
 ---
 
-# 🤖 AI Recommendation Engine
+#  AI Recommendation Engine
 
 The AI module recommends compatible learning partners using Natural Language Processing.
 
@@ -325,76 +325,76 @@ If the AI service is unavailable, the backend automatically falls back to rule-b
 
 ---
 
-## 🏠 Dashboard
+##  Dashboard
 
 <p align="center">
   <img src="sb/screenshots/dashboard.png" width="800" alt="Dashboard">
 </p>
 
-## 👤 My Profile
+##  My Profile
 
 <p align="center">
   <img src="sb/screenshots/my-profile.png" width="800" alt="My Profile">
 </p>
 
-## 📚 Skills
+##  Skills
 
 <p align="center">
   <img src="sb/screenshots/skills.png" width="800" alt="Skills">
 </p>
 
-## 🤖 AI Matches
+##  AI Matches
 
 <p align="center">
   <img src="sb/screenshots/ai-matches.png" width="800" alt="AI Matches">
 </p>
 
 
-## 📤 Send Barter Request
+##  Send Barter Request
 
 <p align="center">
   <img src="sb/screenshots/send-barter-request.png" width="800" alt="Send Barter Request">
 </p>
 
-## 🤝 Barter Request
+##  Barter Request
 
 <p align="center">
   <img src="sb/screenshots/barter-request.png" width="800" alt="Barter Request">
 </p>
 
-## 💬 Chat Interface
+##  Chat Interface
 
 <p align="center">
   <img src="sb/screenshots/chat-interface.png" width="800" alt="Chat Interface">
 </p>
 
-## 📅 Schedule Session
+##  Schedule Session
 
 <p align="center">
   <img src="sb/screenshots/schedule-session.png" width="800" alt="Schedule Session">
 </p>
 
 
-## 🏆 Badges & Leaderboard
+##  Badges & Leaderboard
 
 <p align="center">
   <img src="sb/screenshots/badges-and-leaderboard.png" width="800" alt="Badges and Leaderboard">
 </p>
-# 🛣️ Future Enhancements
+#  Future Enhancements
 
-* 🎥 Video calling
-* 🤖 LLM-powered recommendations
-* 📅 Google Calendar integration
-* 📧 Email notifications
-* 📱 Mobile application
-* 🏆 Achievement badges
-* 🌍 Multi-language support
-* 📊 Analytics dashboard
-* 🔍 Semantic search using Sentence Transformers
+*  Video calling
+*  LLM-powered recommendations
+*  Google Calendar integration
+*  Email notifications
+*  Mobile application
+*  Achievement badges
+*  Multi-language support
+*  Analytics dashboard
+*  Semantic search using Sentence Transformers
 
 ---
 
-# 🤝 Contributing
+#  Contributing
 
 Contributions are welcome.
 
@@ -421,13 +421,13 @@ git push origin feature-name
 
 ---
 
-# 📜 License
+#  License
 
 This project is licensed under the MIT License.
 
 ---
 
-# 👩‍💻 Author
+#  Author
 
 **Srushti Joshi**
 
