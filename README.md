@@ -210,7 +210,17 @@ SkillBarter-Platform/
 | `online_users`           | Server → All             | Online users list              |
 
 ---
+#  Installation
 
+## 1️ Clone Repository
+
+bash
+git clone https://github.com/Srushti_J/SkillBarter_Platform.git
+
+cd SkillBarter-Platform
+
+
+---
 ### Backend
 
 ```bash
