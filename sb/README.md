@@ -1,142 +1,403 @@
-# ⚡ SkillBarter Platform v2 — Production Ready
+# 🤝 SkillBarter Platform v2
 
-> Real users, real-time interactions, no dummy data.
+> **An AI-powered Skill Exchange Platform** where users can teach what they know and learn what they need through intelligent skill matching, real-time communication, session scheduling, and a reputation-based learning ecosystem.
 
-## What was fixed in v2
-
-| Issue | Fix |
-|-------|-----|
-| Matches showed dummy/hardcoded users | Matches now come **only from MongoDB**, filtered to users with complete profiles |
-| Any user could chat with anyone | Chat only works after a **barter request is accepted** |
-| Socket.io used socketId (breaks with multiple tabs) | Now uses **userId-based rooms** — `socket.join(userId)` |
-| No real-time notifications | `new_request`, `request_status_changed`, `receive_message` events all emit to userId rooms |
-| No profile image upload | **Multer** upload at `POST /api/profile/upload-image` |
-| No typing indicator | `typing_start` / `typing_stop` Socket.io events |
-| No online/offline status | `online_users` broadcast + `GET /api/users/:id/status` |
-| No profile completeness gate | Users with empty skills are excluded from matches and cannot send requests |
+![React](https://img.shields.io/badge/Frontend-React-61DAFB?logo=react)
+![Node.js](https://img.shields.io/badge/Backend-Node.js-339933?logo=node.js)
+![Express](https://img.shields.io/badge/Framework-Express-000000?logo=express)
+![MongoDB](https://img.shields.io/badge/Database-MongoDB-47A248?logo=mongodb)
+![FastAPI](https://img.shields.io/badge/AI-FastAPI-009688?logo=fastapi)
+![Socket.IO](https://img.shields.io/badge/Realtime-Socket.IO-010101?logo=socketdotio)
+![JWT](https://img.shields.io/badge/Auth-JWT-orange)
 
 ---
 
-## Quick Start
+## 📖 Overview
 
-### 1. Backend
-```bash
-cd backend
-cp .env.example .env      # edit MONGO_URI and JWT_SECRET
-npm install
-npm run dev               # http://localhost:5000
-```
+SkillBarter Platform is a full-stack web application that enables users to exchange skills without monetary transactions. Users create profiles showcasing the skills they can teach and the skills they wish to learn. An AI-powered recommendation engine intelligently matches compatible users, while real-time chat and notifications make collaboration seamless.
 
-### 2. Frontend
-```bash
-cd frontend
-npm install
-npm start                 # http://localhost:3000
-```
-
-### 3. AI Engine (optional — fallback scoring used if down)
-```bash
-cd ai_module
-python -m venv venv
-source venv/bin/activate  # Windows: venv\Scripts\activate
-pip install -r requirements.txt
-uvicorn main:app --port 8000 --reload
-```
+Unlike traditional learning platforms, SkillBarter focuses on **peer-to-peer knowledge exchange**, making learning accessible, collaborative, and community-driven.
 
 ---
 
-## Folder Structure
+# ✨ Features
 
-```
-skillbarter-v2/
+### 🔐 Authentication
+
+* Secure user registration and login
+* JWT-based authentication
+* Protected routes
+* Persistent login sessions
+
+### 👤 User Profile
+
+* Create and edit profile
+* Upload profile picture
+* Add skills offered
+* Add skills wanted
+* Set proficiency levels
+* Profile completeness validation
+
+### 🤖 AI Skill Matching
+
+* AI-powered user recommendations
+* Intelligent compatibility scoring
+* Filters incomplete profiles
+* Returns only real MongoDB users
+* Automatic fallback scoring if AI service is unavailable
+
+### 🤝 Skill Requests
+
+* Send barter requests
+* Accept or reject requests
+* Instant request notifications
+* Request history
+
+### 💬 Real-Time Chat
+
+* One-to-one messaging
+* Socket.IO powered
+* User ID based rooms
+* Typing indicators
+* Online/offline status
+* Conversation history
+
+### 📅 Session Management
+
+* Schedule learning sessions
+* Complete sessions
+* Cancel sessions
+* Track session history
+
+### ⭐ Reviews & Reputation
+
+* Rate learning partners
+* Leave reviews
+* Reputation score calculation
+* Community trust system
+
+### 🔔 Live Notifications
+
+* New barter requests
+* Request accepted/rejected
+* New messages
+* Online users
+* Typing indicators
+
+---
+
+# 🚀 What's New in Version 2
+
+| Previous Issue                     | Fixed in v2                                |
+| ---------------------------------- | ------------------------------------------ |
+| Dummy users shown in matches       | Only real MongoDB users are matched        |
+| Anyone could chat                  | Chat allowed only after request acceptance |
+| Socket IDs caused multi-tab issues | User ID based rooms implemented            |
+| No real-time notifications         | Live notifications using Socket.IO         |
+| No profile image upload            | Multer image upload added                  |
+| No typing indicator                | Typing events implemented                  |
+| No online/offline status           | Live user presence tracking                |
+| Empty profiles appeared in matches | Profile completeness validation added      |
+
+---
+
+# 🏗️ Tech Stack
+
+## Frontend
+
+* React.js
+* React Router
+* Axios
+* Context API
+* CSS
+
+## Backend
+
+* Node.js
+* Express.js
+* MongoDB
+* Mongoose
+* JWT Authentication
+* Multer
+* Socket.IO
+
+## AI Module
+
+* Python
+* FastAPI
+* Scikit-learn
+* TF-IDF Vectorizer
+* Cosine Similarity
+
+---
+
+# 📂 Project Structure
+
+```text
+SkillBarter-Platform/
+│
 ├── backend/
 │   ├── controllers/
-│   │   ├── authController.js       Register, login (returns full profile)
-│   │   ├── profileController.js    Get/update profile + image upload
-│   │   ├── matchController.js      Real users only, profile completeness filter
-│   │   ├── requestController.js    Send/accept/reject + real-time notifications
-│   │   ├── chatController.js       Messages (accepted partners only) + conversations
-│   │   ├── otherControllers.js     Skill, Session, Review controllers
-│   │   └── userController.js       Online status endpoints
 │   ├── middleware/
-│   │   ├── authMiddleware.js       JWT protect
-│   │   └── uploadMiddleware.js     Multer image upload (5MB, images only)
 │   ├── models/
-│   │   ├── User.js                 + profileImage, lastSeen, isProfileComplete virtual
-│   │   └── models.js               SkillRequest, Message, Session, Review
-│   ├── routes/                     One file per resource
-│   ├── uploads/                    Profile images stored here (auto-created)
-│   ├── server.js                   userId rooms, typing events, all routes
-│   ├── package.json
-│   └── .env.example
+│   ├── routes/
+│   ├── uploads/
+│   ├── server.js
+│   └── package.json
 │
 ├── frontend/
-│   └── src/
-│       ├── App.jsx                 All routes
-│       ├── context/AuthContext.jsx Auth state + single socket connection
-│       ├── services/api.js         All Axios calls including image upload
-│       ├── components/Layout/
-│       │   ├── Sidebar.jsx         Nav + live notification badges
-│       │   └── Topbar.jsx          Page title + profile completion warning
-│       ├── pages/
-│       │   ├── Login.jsx
-│       │   ├── Register.jsx
-│       │   ├── Dashboard.jsx       Real data, no hardcoded anything
-│       │   ├── Matches.jsx         Real users, online indicators, request modal
-│       │   ├── Requests.jsx        Accept/reject + real-time refresh + schedule
-│       │   ├── Chat.jsx            Conversations, typing indicator, online status
-│       │   ├── Profile.jsx         Image upload, skill management, reviews
-│       │   └── Sessions.jsx        Complete/cancel/review
-│       └── styles/global.css       Complete dark theme design system
+│   ├── public/
+│   ├── src/
+│   │   ├── components/
+│   │   ├── context/
+│   │   ├── pages/
+│   │   ├── services/
+│   │   └── App.jsx
+│   └── package.json
 │
-└── ai_module/
-    ├── main.py                     FastAPI + TF-IDF + cosine similarity
-    └── requirements.txt
+├── ai_module/
+│   ├── main.py
+│   └── requirements.txt
+│
+├── README.md
+└── .gitignore
 ```
 
 ---
 
-## End-to-End Flow
+# 🔄 End-to-End Workflow
 
-1. **User A** registers → redirected to Profile → adds skills
-2. **User B** registers → same flow
-3. **User A** visits Matches → AI returns User B (and vice versa)
-4. **User A** sends barter request → User B gets **instant notification** via Socket.io
-5. **User B** accepts → User A gets **instant notification** via Socket.io
-6. Both can now **chat in real-time** (typing indicators, online status)
-7. After session: **review each other** → reputation score recalculated
-
----
-
-## Socket.io Events
-
-| Event | Direction | Description |
-|-------|-----------|-------------|
-| `user_online` | Client → Server | Join userId room on connect |
-| `new_request` | Server → Receiver | New barter request received |
-| `request_status_changed` | Server → Sender | Request accepted or rejected |
-| `send_message` | Client → Server | Send a chat message |
-| `receive_message` | Server → Receiver | Deliver chat message in real-time |
-| `typing_start` | Client → Server → Receiver | Partner started typing |
-| `typing_stop` | Client → Server → Receiver | Partner stopped typing |
-| `online_users` | Server → All | Updated list of online user IDs |
+1. User registers and logs in.
+2. User completes profile by adding skills offered and skills wanted.
+3. AI recommendation engine finds the best learning partners.
+4. User sends a barter request.
+5. Receiver gets an instant notification.
+6. Receiver accepts the request.
+7. Chat becomes available automatically.
+8. Users schedule learning sessions.
+9. Session is completed.
+10. Both users leave ratings and reviews.
+11. Reputation score is updated.
 
 ---
 
-## Environment Variables
+# ⚡ Real-Time Socket.IO Events
 
-### backend/.env
+| Event                    | Direction                | Description                    |
+| ------------------------ | ------------------------ | ------------------------------ |
+| `user_online`            | Client → Server          | Join personal room             |
+| `new_request`            | Server → Client          | New barter request             |
+| `request_status_changed` | Server → Client          | Accepted/Rejected notification |
+| `send_message`           | Client → Server          | Send message                   |
+| `receive_message`        | Server → Client          | Receive message                |
+| `typing_start`           | Client → Server → Client | Typing started                 |
+| `typing_stop`            | Client → Server → Client | Typing stopped                 |
+| `online_users`           | Server → All             | Online users list              |
+
+---
+
+# ⚙️ Installation
+
+## 1️⃣ Clone Repository
+
+```bash
+git clone https://github.com/yourusername/SkillBarter-Platform.git
+
+cd SkillBarter-Platform
 ```
+
+---
+
+## 2️⃣ Backend
+
+```bash
+cd backend
+
+npm install
+
+npm run dev
+```
+
+Runs on:
+
+```
+http://localhost:5000
+```
+
+---
+
+## 3️⃣ Frontend
+
+```bash
+cd frontend
+
+npm install
+
+npm start
+```
+
+Runs on:
+
+```
+http://localhost:3000
+```
+
+---
+
+## 4️⃣ AI Module (Optional)
+
+```bash
+cd ai_module
+
+python -m venv venv
+```
+
+### Windows
+
+```bash
+venv\Scripts\activate
+```
+
+### Linux / macOS
+
+```bash
+source venv/bin/activate
+```
+
+Install dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+Start FastAPI
+
+```bash
+uvicorn main:app --reload --port 8000
+```
+
+---
+
+# 🔑 Environment Variables
+
+## Backend (.env)
+
+```env
 MONGO_URI=mongodb://localhost:27017/skillbarter
-JWT_SECRET=your_secret_key_change_this
+
+JWT_SECRET=your_secret_key
+
 CLIENT_URL=http://localhost:3000
+
 AI_SERVICE_URL=http://localhost:8000/recommend
+
 PORT=5000
+
 NODE_ENV=development
 ```
 
-### frontend/.env
-```
+---
+
+## Frontend (.env)
+
+```env
 REACT_APP_API_URL=http://localhost:5000/api
+
 REACT_APP_SOCKET_URL=http://localhost:5000
 ```
+
+---
+
+# 🤖 AI Recommendation Engine
+
+The AI module recommends compatible learning partners using Natural Language Processing.
+
+### Workflow
+
+* User enters skills offered.
+* User enters skills wanted.
+* Skills are converted into TF-IDF vectors.
+* Cosine similarity is calculated.
+* Best matching users are ranked.
+* Recommendations are returned to the frontend.
+
+If the AI service is unavailable, the backend automatically falls back to rule-based scoring.
+
+---
+
+# 📸 Screenshots
+
+> Add screenshots here after deployment.
+
+* Login Page
+* Dashboard
+* Matches Page
+* Chat
+* Requests
+* Profile
+* Sessions
+
+---
+
+# 🛣️ Future Enhancements
+
+* 🎥 Video calling
+* 🤖 LLM-powered recommendations
+* 📅 Google Calendar integration
+* 📧 Email notifications
+* 📱 Mobile application
+* 🏆 Achievement badges
+* 🌍 Multi-language support
+* 📊 Analytics dashboard
+* 🔍 Semantic search using Sentence Transformers
+
+---
+
+# 🤝 Contributing
+
+Contributions are welcome.
+
+1. Fork the repository.
+2. Create a new branch.
+
+```bash
+git checkout -b feature-name
+```
+
+3. Commit changes.
+
+```bash
+git commit -m "Added new feature"
+```
+
+4. Push to GitHub.
+
+```bash
+git push origin feature-name
+```
+
+5. Open a Pull Request.
+
+---
+
+# 📜 License
+
+This project is licensed under the MIT License.
+
+---
+
+# 👩‍💻 Author
+
+**Srushti Joshi**
+
+Information Science & Engineering Student
+
+Passionate about AI, Machine Learning, Full-Stack Development, and Building Intelligent Applications.
+
+**GitHub:** https://github.com/Srushti-J
+
+**LinkedIn:** https://www.linkedin.com/in/srushti-joshi
+
+---
+
+⭐ If you found this project useful, consider giving it a **Star** on GitHub!
