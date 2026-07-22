@@ -131,7 +131,9 @@ Unlike traditional learning platforms, SkillBarter focuses on **peer-to-peer kno
 
 ---
 
-#  Project Structure
+## Project Structure
+
+```text
 SkillBarter-Platform/
 │
 ├── sb/
