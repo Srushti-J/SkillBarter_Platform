@@ -325,30 +325,58 @@ If the AI service is unavailable, the backend automatically falls back to rule-b
 
 ---
 
-## 📸 Screenshots
+## 🏠 Dashboard
 
 <p align="center">
-  <img src="sb/screenshots/dashboard.png" width="45%" alt="Dashboard"/>
-  <img src="sb/screenshots/ai-matches.png" width="45%" alt="AI Matches"/>
+  <img src="sb/screenshots/dashboard.png" width="800" alt="Dashboard">
 </p>
 
-<p align="center">
-  <img src="sb/screenshots/skills.png" width="45%" alt="Skills"/>
-  <img src="sb/screenshots/send-barter-request.png" width="45%" alt="Send Barter Request"/>
-</p>
+## 🤖 AI Matches
 
 <p align="center">
-  <img src="sb/screenshots/barter-request.png" width="45%" alt="Barter Request"/>
-  <img src="sb/screenshots/chat-interface.png" width="45%" alt="Chat Interface"/>
+  <img src="sb/screenshots/ai-matches.png" width="800" alt="AI Matches">
 </p>
 
-<p align="center">
-  <img src="sb/screenshots/schedule-session.png" width="45%" alt="Schedule Session"/>
-  <img src="sb/screenshots/my-profile.png" width="45%" alt="My Profile"/>
-</p>
+## 📚 Skills
 
 <p align="center">
-  <img src="sb/screenshots/badges-and-leaderboard.png" width="60%" alt="Badges and Leaderboard"/>
+  <img src="sb/screenshots/skills.png" width="800" alt="Skills">
+</p>
+
+## 📤 Send Barter Request
+
+<p align="center">
+  <img src="sb/screenshots/send-barter-request.png" width="800" alt="Send Barter Request">
+</p>
+
+## 🤝 Barter Request
+
+<p align="center">
+  <img src="sb/screenshots/barter-request.png" width="800" alt="Barter Request">
+</p>
+
+## 💬 Chat Interface
+
+<p align="center">
+  <img src="sb/screenshots/chat-interface.png" width="800" alt="Chat Interface">
+</p>
+
+## 📅 Schedule Session
+
+<p align="center">
+  <img src="sb/screenshots/schedule-session.png" width="800" alt="Schedule Session">
+</p>
+
+## 👤 My Profile
+
+<p align="center">
+  <img src="sb/screenshots/my-profile.png" width="800" alt="My Profile">
+</p>
+
+## 🏆 Badges & Leaderboard
+
+<p align="center">
+  <img src="sb/screenshots/badges-and-leaderboard.png" width="800" alt="Badges and Leaderboard">
 </p>
 # 🛣️ Future Enhancements
 
