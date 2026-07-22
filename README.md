@@ -132,35 +132,48 @@ Unlike traditional learning platforms, SkillBarter focuses on **peer-to-peer kno
 ---
 
 #  Project Structure
-
-```text
 SkillBarter-Platform/
 │
-├── backend/
-│   ├── controllers/
-│   ├── middleware/
-│   ├── models/
-│   ├── routes/
-│   ├── uploads/
-│   ├── server.js
-│   └── package.json
+├── sb/
+│   ├── ai_module/
+│   │   ├── main.py
+│   │   └── requirements.txt
+│   │
+│   ├── backend/
+│   │   ├── config/
+│   │   ├── controllers/
+│   │   ├── middleware/
+│   │   ├── models/
+│   │   ├── routes/
+│   │   ├── uploads/
+│   │   ├── package.json
+│   │   └── server.js
+│   │
+│   ├── frontend/
+│   │   ├── public/
+│   │   ├── src/
+│   │   │   ├── components/
+│   │   │   ├── context/
+│   │   │   ├── pages/
+│   │   │   ├── services/
+│   │   │   ├── styles/
+│   │   │   ├── App.jsx
+│   │   │   └── main.jsx
+│   │   └── package.json
+│   │
+│   └── screenshots/
+│       ├── dashboard.png
+│       ├── ai-matches.png
+│       ├── skills.png
+│       ├── send-barter-request.png
+│       ├── barter-request.png
+│       ├── chat-interface.png
+│       ├── schedule-session.png
+│       ├── my-profile.png
+│       └── badges-and-leaderboard.png
 │
-├── frontend/
-│   ├── public/
-│   ├── src/
-│   │   ├── components/
-│   │   ├── context/
-│   │   ├── pages/
-│   │   ├── services/
-│   │   └── App.jsx
-│   └── package.json
-│
-├── ai_module/
-│   ├── main.py
-│   └── requirements.txt
-│
-├── README.md
-└── .gitignore
+├── .gitignore
+└── README.md
 ```
 
 ---
