@@ -331,10 +331,10 @@ If the AI service is unavailable, the backend automatically falls back to rule-b
   <img src="sb/screenshots/dashboard.png" width="800" alt="Dashboard">
 </p>
 
-## 🤖 AI Matches
+## 👤 My Profile
 
 <p align="center">
-  <img src="sb/screenshots/ai-matches.png" width="800" alt="AI Matches">
+  <img src="sb/screenshots/my-profile.png" width="800" alt="My Profile">
 </p>
 
 ## 📚 Skills
@@ -342,6 +342,13 @@ If the AI service is unavailable, the backend automatically falls back to rule-b
 <p align="center">
   <img src="sb/screenshots/skills.png" width="800" alt="Skills">
 </p>
+
+## 🤖 AI Matches
+
+<p align="center">
+  <img src="sb/screenshots/ai-matches.png" width="800" alt="AI Matches">
+</p>
+
 
 ## 📤 Send Barter Request
 
@@ -367,11 +374,6 @@ If the AI service is unavailable, the backend automatically falls back to rule-b
   <img src="sb/screenshots/schedule-session.png" width="800" alt="Schedule Session">
 </p>
 
-## 👤 My Profile
-
-<p align="center">
-  <img src="sb/screenshots/my-profile.png" width="800" alt="My Profile">
-</p>
 
 ## 🏆 Badges & Leaderboard
 
