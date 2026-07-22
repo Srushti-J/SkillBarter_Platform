@@ -14,10 +14,17 @@
 
 ## Overview
 
-SkillBarter Platform is a full-stack web application that enables users to exchange skills without monetary transactions. Users create profiles showcasing the skills they can teach and the skills they wish to learn. An AI-powered recommendation engine intelligently matches compatible users, while real-time chat and notifications make collaboration seamless.
+SkillBarter Platform is an AI-powered peer-to-peer learning platform that enables users to exchange skills instead of paying for courses. The system intelligently matches users based on the skills they offer and the skills they want to learn, enabling collaborative knowledge sharing through real-time communication, scheduling, and reputation tracking.
+## Key Highlights
 
-Unlike traditional learning platforms, SkillBarter focuses on **peer-to-peer knowledge exchange**, making learning accessible, collaborative, and community-driven.
-
+- AI-powered skill recommendation engine
+- Real-time chat using Socket.IO
+- JWT authentication and authorization
+- Profile image upload with Multer
+- Live online/offline presence
+- Typing indicators
+- Reputation and review system
+- Session scheduling
 ---
 
 # Features
@@ -211,16 +218,12 @@ SkillBarter-Platform/
 
 ---
 #  Installation
+##Clone Repository
+```bash
+git clone https://github.com/Srushti-J/SkillBarter_Platform.git
 
-## 1️ Clone Repository
-
-bash
-git clone https://github.com/Srushti_J/SkillBarter_Platform.git
-
-cd SkillBarter-Platform
-
-
----
+cd SkillBarter_Platform
+```
 ### Backend
 
 ```bash
@@ -427,4 +430,3 @@ Passionate about AI, Machine Learning, Full-Stack Development, and Building Inte
 
 ---
 
-⭐ If you found this project useful, consider giving it a **Star** on GitHub!
