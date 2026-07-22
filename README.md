@@ -211,88 +211,46 @@ SkillBarter-Platform/
 
 ---
 
-#  Installation
-
-## 1️ Clone Repository
+### Backend
 
 ```bash
-git clone https://github.com/yourusername/SkillBarter-Platform.git
-
-cd SkillBarter-Platform
-```
-
----
-
-## 2️ Backend
-
-```bash
-cd backend
-
+cd sb/backend
 npm install
-
 npm run dev
 ```
 
-Runs on:
-
-```
-http://localhost:5000
-```
-
----
-
-## 3️ Frontend
+### Frontend
 
 ```bash
-cd frontend
-
+cd sb/frontend
 npm install
-
 npm start
 ```
 
-Runs on:
-
-```
-http://localhost:3000
-```
-
----
-
-## 4️ AI Module (Optional)
+### AI Module
 
 ```bash
-cd ai_module
+cd sb/ai_module
 
 python -m venv venv
 ```
 
-### Windows
+Windows
 
 ```bash
 venv\Scripts\activate
 ```
 
-### Linux / macOS
+Linux / macOS
 
 ```bash
 source venv/bin/activate
 ```
 
-Install dependencies
-
 ```bash
 pip install -r requirements.txt
-```
-
-Start FastAPI
-
-```bash
 uvicorn main:app --reload --port 8000
 ```
-
----
-
 #  Environment Variables
 
 ## Backend (.env)
